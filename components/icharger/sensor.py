@@ -94,58 +94,52 @@ CONFIG_SCHEMA = cv.Schema(
             UNIT_EMPTY, ICON_EMPTY, 0, DEVICE_CLASS_EMPTY
         ),
         cv.Optional(CONF_CURRENT): sensor.sensor_schema(
-            UNIT_AMPERE, ICON_CURRENT_AC, 0, DEVICE_CLASS_CURRENT
+            UNIT_AMPERE, ICON_CURRENT_AC, 3, DEVICE_CLASS_CURRENT
         ),
         cv.Optional(CONF_INPUT_VOLTAGE): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_BATTERY_VOLTAGE): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_CAPACITY_MAH): sensor.sensor_schema(
-            UNIT_EMPTY, ICON_POWER, 0, DEVICE_CLASS_EMPTY  # maybe should be UNIT_WATT?
-        ),
-        cv.Optional(CONF_C01): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
-        ),
-        cv.Optional(CONF_C01): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_EMPTY, ICON_POWER, 3, DEVICE_CLASS_EMPTY  # maybe should be UNIT_WATT? # ted: units here are milliamp hours, not watts
         ),
         cv.Optional(CONF_INT_TEMP): sensor.sensor_schema(
-            UNIT_CELSIUS, ICON_FLASH, 0, DEVICE_CLASS_TEMPERATURE
+            UNIT_CELSIUS, ICON_FLASH, 1, DEVICE_CLASS_TEMPERATURE
         ),
         cv.Optional(CONF_EXT_TEMP): sensor.sensor_schema(
-            UNIT_CELSIUS, ICON_FLASH, 0, DEVICE_CLASS_TEMPERATURE
+            UNIT_CELSIUS, ICON_FLASH, 1, DEVICE_CLASS_TEMPERATURE
         ),
         cv.Optional(CONF_C01): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C02): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C03): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C04): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C05): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C06): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C07): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C08): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C09): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
         cv.Optional(CONF_C10): sensor.sensor_schema(
-            UNIT_VOLT, ICON_FLASH, 0, DEVICE_CLASS_VOLTAGE
+            UNIT_VOLT, ICON_FLASH, 3, DEVICE_CLASS_VOLTAGE
         ),
     }
 )
